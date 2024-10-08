@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
     --bg-color: #222831;
@@ -15,13 +15,19 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+}
+
 h1 {
     font-size: 2rem;
     color: var(--bg-color);
     font-weight: 700;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: center;
     font-weight: 400;
@@ -30,13 +36,7 @@ nav{
 nav a {
     text-decoration: none;
     color: var(--bg-color);
-     margin: 0rem 2rem 1rem 0rem;    
-}
-
-header {
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 1px;
+    margin: 0 2rem 1rem 0rem;
     font-size: 1.2rem;
 }
 
@@ -44,6 +44,13 @@ nav a:hover {
     text-decoration: underline;
     transform: scale(0.90);
     transition: transform 0.1s;
+}
+
+.graficos-container_texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
 }
 
 footer {
@@ -55,4 +62,13 @@ footer {
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
+}
+
+.graficos-container {
+    margin: 5rem;
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
 }
