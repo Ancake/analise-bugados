@@ -13,11 +13,11 @@ async function vizualizarInformacoesGlobais() {
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
     
-    paragrafo.innerHTML = `voce sabia que existem aproximadamente <span>${dados.total_celtas_brasil}1.667.202</span> unidades de celtas no brasil, foram vendidos <span>${dados.total_carros_vendidos}1.057.366 </span>unidades de celtas no brasil. Por dia, os celtas sao usados por <span>${dados.tempo_usado}</span>2.38 horas por pessoa.`
+    paragrafo.innerHTML = `voce sabia que existem aproximadamente <span>${celtasNoBrasil}1.667.202</span> unidades de celtas no brasil, foram vendidos <span>${carrosVendidos}1.057.366 </span>unidades de celtas no brasil. Por dia, os celtas sao usados por <span>${tempoUsado}</span>2.38 horas por pessoa.`
     console.log(paragrafo)
 
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo)
 }
-
+__
 vizualizarInformacoesGlobais()
